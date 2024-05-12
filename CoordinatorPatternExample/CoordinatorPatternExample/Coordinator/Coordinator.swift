@@ -50,4 +50,8 @@ enum CoordinatorType {
     
     case app
     case main
+    
+    case tab
+    case first
+    case second
 }
