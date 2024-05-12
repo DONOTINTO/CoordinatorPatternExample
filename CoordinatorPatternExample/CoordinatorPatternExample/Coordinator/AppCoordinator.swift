@@ -10,6 +10,7 @@ import UIKit
 protocol AppCoordinatorProtocol: Coordinator {
     
     func showMainFlow()
+    func showTabFlow()
 }
 
 class AppCoordinator: AppCoordinatorProtocol {
@@ -25,7 +26,14 @@ class AppCoordinator: AppCoordinatorProtocol {
     func start() {
         
         print("App Coordinator Start")
-        showMainFlow()
+        
+        let random = Int.random(in: 1...2)
+        
+        if random == 1 {
+            showMainFlow()
+        } else {
+            showTabFlow()
+        }
     }
     
     required init(_ navigationController: UINavigationController) {
@@ -43,6 +51,15 @@ class AppCoordinator: AppCoordinatorProtocol {
         
         childCoordinators.append(mainViewCoordinator)
     }
+    
+    func showTabFlow() {
+        print("App Coordinator Show Tab Flow")
+        let tabBarCoordinator = TabBarCoordinator(navigationController)
+        tabBarCoordinator.finishDelegate = self
+        tabBarCoordinator.start()
+        
+        childCoordinators.append(tabBarCoordinator)
+    }
 }
 
 extension AppCoordinator: CoordinatorFinishDelegate {
@@ -58,7 +75,11 @@ extension AppCoordinator: CoordinatorFinishDelegate {
         
         switch childCoordinator.coordinatorType {
         case .main:
-            print("main view coodinator 종료")
+            navigationController.viewControllers.removeAll()
+            
+            showTabFlow()
+        case .tab:
+            print("Tab View Coordinator 종료")
         default:
             return
         }

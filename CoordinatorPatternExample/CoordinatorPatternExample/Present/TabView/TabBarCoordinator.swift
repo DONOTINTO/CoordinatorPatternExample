@@ -1,5 +1,5 @@
 //
-//  TabViewCoordinator.swift
+//  TabBarCoordinator.swift
 //  CoordinatorPatternExample
 //
 //  Created by 이중엽 on 5/11/24.
@@ -16,7 +16,7 @@ class TabBarCoordinator: TabBarCoordinatorProtocol {
     
     var tabBarController: UITabBarController
     
-    var coordinatorType: CoordinatorType
+    var coordinatorType: CoordinatorType { .tab }
     
     var navigationController: UINavigationController
     
@@ -45,7 +45,6 @@ class TabBarCoordinator: TabBarCoordinatorProtocol {
     required init(_ navigationController: UINavigationController) {
         
         self.navigationController = navigationController
-        self.coordinatorType = CoordinatorType.tab
         self.tabBarController = UITabBarController()
     }
     

@@ -18,7 +18,7 @@
 		AC5A7BD82BEF546C00A13991 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BD72BEF546C00A13991 /* MainViewCoordinator.swift */; };
 		AC5A7BDC2BEF63D600A13991 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BDB2BEF63D600A13991 /* FirstTabViewController.swift */; };
 		AC5A7BDE2BEF63E000A13991 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BDD2BEF63E000A13991 /* SecondTabViewController.swift */; };
-		AC5A7BE02BEF63EB00A13991 /* TabViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BDF2BEF63EB00A13991 /* TabViewCoordinator.swift */; };
+		AC5A7BE02BEF63EB00A13991 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BDF2BEF63EB00A13991 /* TabBarCoordinator.swift */; };
 		AC5A7BE22BF0B3E300A13991 /* FirstTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BE12BF0B3E300A13991 /* FirstTabCoordinator.swift */; };
 		AC5A7BE42BF0B51300A13991 /* SecondTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BE32BF0B51300A13991 /* SecondTabCoordinator.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 		AC5A7BD72BEF546C00A13991 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
 		AC5A7BDB2BEF63D600A13991 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		AC5A7BDD2BEF63E000A13991 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
-		AC5A7BDF2BEF63EB00A13991 /* TabViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewCoordinator.swift; sourceTree = "<group>"; };
+		AC5A7BDF2BEF63EB00A13991 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		AC5A7BE12BF0B3E300A13991 /* FirstTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCoordinator.swift; sourceTree = "<group>"; };
 		AC5A7BE32BF0B51300A13991 /* SecondTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +122,7 @@
 		AC5A7BDA2BEF63AF00A13991 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				AC5A7BDF2BEF63EB00A13991 /* TabViewCoordinator.swift */,
+				AC5A7BDF2BEF63EB00A13991 /* TabBarCoordinator.swift */,
 				AC5A7BE12BF0B3E300A13991 /* FirstTabCoordinator.swift */,
 				AC5A7BE32BF0B51300A13991 /* SecondTabCoordinator.swift */,
 				AC5A7BDB2BEF63D600A13991 /* FirstTabViewController.swift */,
@@ -206,7 +206,7 @@
 				AC5A7BC02BEF4D8D00A13991 /* MainViewController.swift in Sources */,
 				AC5A7BDE2BEF63E000A13991 /* SecondTabViewController.swift in Sources */,
 				AC5A7BE22BF0B3E300A13991 /* FirstTabCoordinator.swift in Sources */,
-				AC5A7BE02BEF63EB00A13991 /* TabViewCoordinator.swift in Sources */,
+				AC5A7BE02BEF63EB00A13991 /* TabBarCoordinator.swift in Sources */,
 				AC5A7BD52BEF51F900A13991 /* AppCoordinator.swift in Sources */,
 				AC5A7BBC2BEF4D8D00A13991 /* AppDelegate.swift in Sources */,
 				AC5A7BE42BF0B51300A13991 /* SecondTabCoordinator.swift in Sources */,

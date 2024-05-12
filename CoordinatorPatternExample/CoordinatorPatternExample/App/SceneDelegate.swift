@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = navVC
         window.makeKeyAndVisible()
         
-        let appCoordinator = TabBarCoordinator(navVC)
+        let appCoordinator = AppCoordinator(navVC)
         appCoordinator.start()
         
         self.window = window
